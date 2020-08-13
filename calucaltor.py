@@ -1,5 +1,3 @@
-ter_none
-brightness_4
 # Python program to  create a simple GUI  
 # calculator using Tkinter 
   
@@ -108,7 +106,7 @@ if __name__ == "__main__":
                      command=lambda: press(4), height=1, width=7) 
     button4.grid(row=3, column=0) 
   
-    button5 = Button(gui, text=' 5 ', fg='black', bg=bg='white', 
+    button5 = Button(gui, text=' 5 ', fg='black', bg='white', 
                      command=lambda: press(5), height=1, width=7) 
     button5.grid(row=3, column=1) 
   
