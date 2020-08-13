@@ -24,10 +24,7 @@ int main()
   		case '*':
   			result = num1 * num2;
   			break;
-  		case '/':
-  			result = num1 / num2;
-  			break;
-		default:
+  		default:
 			printf("\n You have enetered an Invalid Operator ");				    			
 	}
   
