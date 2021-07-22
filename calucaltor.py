@@ -63,33 +63,13 @@ if __name__ == "__main__":
     gui = Tk() 
   
     # set the background colour of GUI window 
-    gui.configure(background="light green") 
-  
-    # set the title of GUI window 
+    gui.configure(background="White") 
     gui.title("Simple Calculator") 
-  
-    # set the configuration of GUI window 
     gui.geometry("270x150") 
-  
-    # StringVar() is the variable class 
-    # we create an instance of this class 
     equation = StringVar() 
-  
-    # create the text entry box for 
-    # showing the expression . 
     expression_field = Entry(gui, textvariable=equation) 
-  
-    # grid method is used for placing 
-    # the widgets at respective positions 
-    # in table like structure . 
     expression_field.grid(columnspan=4, ipadx=70) 
-  
     equation.set('enter your expression') 
-  
-    # create a Buttons and place at a particular 
-    # location inside the root window . 
-    # when user press the button, the command or 
-    # function affiliated to that button is executed . 
     button1 = Button(gui, text=' 1 ', fg='black', bg='white',command=lambda: press(1), height=1, width=7) 
     button1.grid(row=2, column=0)
     button2 = Button(gui, text=' 2 ', fg='black', bg='white',command=lambda: press(2), height=1, width=7) 
